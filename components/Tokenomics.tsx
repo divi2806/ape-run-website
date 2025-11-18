@@ -16,8 +16,8 @@ export default function Tokenomics() {
       gradient: 'from-blue-500 to-purple-600',
     },
     {
-      title: 'NFT Burn to Earn',
-      description: 'Burn NFTs to receive token rewards and unlock special benefits in the ecosystem.',
+      title: 'Tickets Burn to Earn',
+      description: 'Burn Tickets to receive token rewards and unlock special benefits in the ecosystem.',
       gradient: 'from-orange-500 to-red-600',
     },
     {
@@ -51,8 +51,8 @@ export default function Tokenomics() {
       gradient: 'from-purple-500 to-indigo-600',
     },
     {
-      title: 'Bonus Rewards (NFT Holders)',
-      description: 'NFT holders receive multiplied weekly bonuses based on their token holdings.',
+      title: 'Bonus Rewards (SeasonPass Holders)',
+      description: 'SeasonPass holders receive multiplied weekly bonuses based on their token holdings.',
       gradient: 'from-yellow-500 to-amber-600',
     },
   ]

@@ -9,12 +9,12 @@ export default function About() {
     },
     {
       title: 'Tournament System',
-      description: 'Compete in public and NFT-exclusive tournaments. Climb the leaderboard and win prizes from the prize pool.',
+      description: 'Compete in public and Ticket-exclusive tournaments. Climb the leaderboard and win prizes from the prize pool.',
       gradient: 'from-purple-400 to-pink-500',
     },
     {
-      title: 'NFT Integration',
-      description: 'Own exclusive Ape Run NFTs to unlock special tournaments, bonus rewards, and unique in-game abilities.',
+      title: 'Ticket Integration',
+      description: 'Own exclusive Ape Run Tickets to unlock special tournaments, bonus rewards, and unique in-game abilities.',
       gradient: 'from-blue-400 to-cyan-500',
     },
     {
@@ -93,7 +93,7 @@ export default function About() {
                 </p>
                 <p className="leading-relaxed">
                   Connect your wallet to save scores on-chain, participate in tournaments, 
-                  and earn token rewards. NFT holders get access to exclusive tournaments 
+                  and earn token rewards. SeasonPass holders get access to exclusive tournaments 
                   with enhanced prize pools and multiplied rewards.
                 </p>
               </div>
