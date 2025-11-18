@@ -63,13 +63,13 @@ export default function Tokenomics() {
       <img 
         src="/monkey1.png" 
         alt="" 
-        className="absolute top-10 left-5 md:left-20 w-24 h-24 md:w-36 md:h-36 object-contain z-20 opacity-70"
+        className="absolute top-10 left-2 w-16 h-16 sm:w-20 sm:h-20 md:left-10 md:w-28 md:h-28 lg:w-36 lg:h-36 object-contain z-20 opacity-70"
         style={{ transform: 'rotate(-25deg)' }}
       />
       <img 
         src="/monkey2.png" 
         alt="" 
-        className="absolute top-1/3 right-5 md:right-16 w-28 h-28 md:w-40 md:h-40 object-contain z-20 opacity-70"
+        className="absolute top-1/3 right-2 w-20 h-20 sm:w-24 sm:h-24 md:right-10 md:w-32 md:h-32 lg:w-40 lg:h-40 object-contain z-20 opacity-70"
         style={{ transform: 'rotate(22deg)' }}
       />
 
@@ -95,47 +95,47 @@ export default function Tokenomics() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
-        <div className="text-center mb-20">
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black mb-6">
+        <div className="text-center mb-12 sm:mb-16 md:mb-20">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-4 sm:mb-6 px-2">
             <span className="text-white">Token </span>
             <span className="text-gradient">Economics</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed px-4">
             A carefully designed token economy that rewards players, ensures liquidity, 
             and gives the community control over the project&apos;s future.
           </p>
         </div>
 
         {/* Supply info */}
-        <div className="mb-20 text-center">
-          <div className="inline-block bg-gradient-to-br from-primary-500/20 to-primary-600/10 backdrop-blur-sm rounded-3xl p-12 border border-primary-500/30">
-            <div className="text-sm uppercase tracking-wider text-primary-400 mb-4 font-semibold">Total Supply</div>
-            <div className="text-6xl sm:text-7xl font-black text-gradient mb-4">100,000,000,000</div>
-            <div className="text-gray-400 text-lg">100 Billion Tokens</div>
+        <div className="mb-12 sm:mb-16 md:mb-20 text-center">
+          <div className="inline-block bg-gradient-to-br from-primary-500/20 to-primary-600/10 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 border border-primary-500/30 mx-2">
+            <div className="text-xs sm:text-sm uppercase tracking-wider text-primary-400 mb-2 sm:mb-4 font-semibold">Total Supply</div>
+            <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-gradient mb-2 sm:mb-4">100,000,000,000</div>
+            <div className="text-gray-400 text-sm sm:text-base md:text-lg">100 Billion Tokens</div>
           </div>
         </div>
 
         {/* Distribution */}
-        <div className="mb-20">
-          <h3 className="text-3xl font-bold text-center text-white mb-12">Token Distribution</h3>
+        <div className="mb-12 sm:mb-16 md:mb-20">
+          <h3 className="text-2xl sm:text-3xl font-bold text-center text-white mb-8 sm:mb-12 px-2">Token Distribution</h3>
           
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
             {/* Visual representation */}
             <div className="order-2 lg:order-1">
-              <div className="space-y-4">
+              <div className="space-y-3 sm:space-y-4">
                 {distribution.map((item, index) => (
-                  <div key={index} className="bg-gray-900/50 backdrop-blur-sm rounded-xl p-6 border border-gray-800 hover:border-primary-500/50 transition-all">
-                    <div className="flex items-center justify-between mb-3">
-                      <span className="text-white font-semibold text-lg">{item.label}</span>
-                      <span className="text-2xl font-bold text-gradient">{item.percentage}%</span>
+                  <div key={index} className="bg-gray-900/50 backdrop-blur-sm rounded-lg sm:rounded-xl p-4 sm:p-5 md:p-6 border border-gray-800 hover:border-primary-500/50 transition-all">
+                    <div className="flex items-center justify-between mb-2 sm:mb-3">
+                      <span className="text-white font-semibold text-sm sm:text-base md:text-lg">{item.label}</span>
+                      <span className="text-xl sm:text-2xl font-bold text-gradient">{item.percentage}%</span>
                     </div>
-                    <div className="w-full bg-gray-800 rounded-full h-3 mb-3 overflow-hidden">
+                    <div className="w-full bg-gray-800 rounded-full h-2 sm:h-3 mb-2 sm:mb-3 overflow-hidden">
                       <div
                         className={`h-full bg-gradient-to-r ${item.color} rounded-full transition-all duration-1000`}
                         style={{ width: `${item.percentage}%` }}
                       />
                     </div>
-                    <p className="text-gray-400 text-sm">{item.description}</p>
+                    <p className="text-gray-400 text-xs sm:text-sm">{item.description}</p>
                   </div>
                 ))}
               </div>
@@ -200,23 +200,23 @@ export default function Tokenomics() {
 
         {/* Token Utilities */}
         <div>
-          <h3 className="text-3xl font-bold text-center text-white mb-4">Token Utilities</h3>
-          <p className="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
+          <h3 className="text-2xl sm:text-3xl font-bold text-center text-white mb-3 sm:mb-4 px-2">Token Utilities</h3>
+          <p className="text-center text-gray-400 mb-8 sm:mb-12 max-w-2xl mx-auto text-sm sm:text-base px-4">
             Multiple use cases ensure strong token demand and create a sustainable ecosystem
           </p>
           
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6">
             {utilities.map((utility, index) => (
               <div
                 key={index}
-                className="card-hover bg-gradient-to-br from-gray-900/80 to-gray-800/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-800 hover:border-primary-500/50 relative overflow-hidden group"
+                className="card-hover bg-gradient-to-br from-gray-900/80 to-gray-800/50 backdrop-blur-sm rounded-xl sm:rounded-2xl p-5 sm:p-6 border border-gray-800 hover:border-primary-500/50 relative overflow-hidden group"
               >
                 <div className={`absolute inset-0 bg-gradient-to-br ${utility.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-300`} />
-                <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${utility.gradient} mb-4 flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300 relative z-10`}>
-                  <div className="w-6 h-6 bg-white/30 rounded" />
+                <div className={`w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl bg-gradient-to-br ${utility.gradient} mb-3 sm:mb-4 flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300 relative z-10`}>
+                  <div className="w-5 h-5 sm:w-6 sm:h-6 bg-white/30 rounded" />
                 </div>
-                <h4 className="text-lg font-bold text-white mb-2 relative z-10">{utility.title}</h4>
-                <p className="text-gray-400 text-sm leading-relaxed relative z-10">{utility.description}</p>
+                <h4 className="text-base sm:text-lg font-bold text-white mb-2 relative z-10">{utility.title}</h4>
+                <p className="text-gray-400 text-xs sm:text-sm leading-relaxed relative z-10">{utility.description}</p>
               </div>
             ))}
           </div>
@@ -228,7 +228,7 @@ export default function Tokenomics() {
           <img 
             src="/monkey3.png" 
             alt="" 
-            className="absolute left-0 md:left-10 top-1/2 -translate-y-1/2 w-40 h-40 md:w-64 md:h-64 object-contain z-20 opacity-85"
+            className="hidden sm:block absolute left-0 top-1/2 -translate-y-1/2 w-32 h-32 sm:w-40 sm:h-40 md:left-5 md:w-52 md:h-52 lg:left-10 lg:w-64 lg:h-64 object-contain z-20 opacity-85"
             style={{ transform: 'translateY(-50%) rotate(-8deg)' }}
           />
           
@@ -236,13 +236,13 @@ export default function Tokenomics() {
           <img 
             src="/monkey4.png" 
             alt="" 
-            className="absolute right-0 md:right-10 top-1/2 -translate-y-1/2 w-40 h-40 md:w-64 md:h-64 object-contain z-20 opacity-85"
+            className="hidden sm:block absolute right-0 top-1/2 -translate-y-1/2 w-32 h-32 sm:w-40 sm:h-40 md:right-5 md:w-52 md:h-52 lg:right-10 lg:w-64 lg:h-64 object-contain z-20 opacity-85"
             style={{ transform: 'translateY(-50%) rotate(8deg)' }}
           />
 
-          <div className="inline-block bg-gradient-to-br from-primary-500/10 to-primary-600/5 backdrop-blur-sm rounded-2xl p-12 border border-primary-500/30 relative z-10">
-            <h3 className="text-3xl font-bold text-white mb-4">Ready to Join the Jungle?</h3>
-            <p className="text-gray-300 mb-8 max-w-2xl">
+          <div className="inline-block bg-gradient-to-br from-primary-500/10 to-primary-600/5 backdrop-blur-sm rounded-2xl p-6 sm:p-8 md:p-12 border border-primary-500/30 relative z-10 mx-4">
+            <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">Ready to Join the Jungle?</h3>
+            <p className="text-gray-300 mb-6 sm:mb-8 max-w-2xl text-sm sm:text-base px-2">
               Start playing now to earn tokens, climb the leaderboard, and be part of a thriving gaming community.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

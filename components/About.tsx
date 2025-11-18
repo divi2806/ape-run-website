@@ -40,13 +40,13 @@ export default function About() {
       <img 
         src="/monkey2.png" 
         alt="" 
-        className="absolute top-32 right-5 w-28 h-28 md:w-40 md:h-40 object-contain z-20 opacity-80"
+        className="absolute top-20 right-2 w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-contain z-20 opacity-80"
         style={{ transform: 'rotate(18deg)' }}
       />
       <img 
         src="/monkey1.png" 
         alt="" 
-        className="absolute bottom-20 left-5 w-32 h-32 md:w-44 md:h-44 object-contain z-20 opacity-80"
+        className="absolute bottom-10 left-2 w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:h-36 lg:w-44 lg:h-44 object-contain z-20 opacity-80"
         style={{ transform: 'rotate(-20deg)' }}
       />
 
@@ -63,12 +63,12 @@ export default function About() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black mb-6">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-4 sm:mb-6 px-2">
             <span className="text-white">About </span>
             <span className="text-gradient">Ape Run</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed px-4">
             Ape Run is a skill-based arcade game where players climb an endless tree, 
             dodging branches and collecting bananas. Built on Base network with Web3 integration, 
             it combines classic arcade gameplay with modern blockchain rewards.
@@ -76,11 +76,11 @@ export default function About() {
         </div>
 
         {/* Game description */}
-        <div className="mb-20 bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm rounded-3xl p-8 sm:p-12 border border-primary-500/20">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <h3 className="text-3xl font-bold text-white">How It Works</h3>
-              <div className="space-y-4 text-gray-300">
+        <div className="mb-16 sm:mb-20 bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 border border-primary-500/20">
+          <div className="grid md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
+            <div className="space-y-4 sm:space-y-6">
+              <h3 className="text-2xl sm:text-3xl font-bold text-white">How It Works</h3>
+              <div className="space-y-3 sm:space-y-4 text-gray-300 text-sm sm:text-base">
                 <p className="leading-relaxed">
                   Control your monkey character as it climbs an endless tree trunk. 
                   Swipe left or right to dodge incoming branches that appear from both sides. 
@@ -98,7 +98,7 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-primary-500/20 to-jungle-500/20 rounded-2xl p-8 border border-primary-500/30 relative overflow-hidden">
+            <div className="bg-gradient-to-br from-primary-500/20 to-jungle-500/20 rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-primary-500/30 relative overflow-hidden">
               <div className="absolute -top-10 -right-10 w-40 h-40 bg-primary-500/10 rounded-full blur-3xl animate-pulse-slow" />
               <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-jungle-500/10 rounded-full blur-3xl animate-pulse-slow" />
               
@@ -154,19 +154,19 @@ export default function About() {
 
         {/* Features grid */}
         <div>
-          <h3 className="text-3xl font-bold text-center text-white mb-12">Key Features</h3>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <h3 className="text-2xl sm:text-3xl font-bold text-center text-white mb-8 sm:mb-12 px-2">Key Features</h3>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="card-hover bg-gradient-to-br from-gray-900/80 to-gray-800/40 backdrop-blur-sm rounded-2xl p-8 border border-primary-500/20 relative overflow-hidden group"
+                className="card-hover bg-gradient-to-br from-gray-900/80 to-gray-800/40 backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-7 md:p-8 border border-primary-500/20 relative overflow-hidden group"
               >
                 <div className={`absolute inset-0 bg-gradient-to-br ${feature.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-300`} />
-                <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${feature.gradient} mb-6 flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300`}>
-                  <div className="w-8 h-8 bg-white/20 rounded-lg" />
+                <div className={`w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-xl sm:rounded-2xl bg-gradient-to-br ${feature.gradient} mb-4 sm:mb-5 md:mb-6 flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300`}>
+                  <div className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-white/20 rounded-lg" />
                 </div>
-                <h4 className="text-xl font-bold text-white mb-3">{feature.title}</h4>
-                <p className="text-gray-400 leading-relaxed">{feature.description}</p>
+                <h4 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3">{feature.title}</h4>
+                <p className="text-gray-400 leading-relaxed text-sm sm:text-base">{feature.description}</p>
               </div>
             ))}
           </div>

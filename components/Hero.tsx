@@ -95,65 +95,65 @@ export default function Hero() {
       <img 
         src="/monkey1.png" 
         alt="" 
-        className="absolute top-20 left-10 w-32 h-32 md:w-48 md:h-48 object-contain z-30 opacity-90"
+        className="absolute top-10 left-2 w-20 h-20 sm:w-28 sm:h-28 md:w-40 md:h-40 lg:w-48 lg:h-48 object-contain z-30 opacity-90"
         style={{ transform: 'rotate(-15deg)' }}
       />
       <img 
         src="/monkey2.png" 
         alt="" 
-        className="absolute bottom-32 right-10 w-40 h-40 md:w-56 md:h-56 object-contain z-30 opacity-90"
+        className="absolute bottom-20 right-2 w-24 h-24 sm:w-32 sm:h-32 md:w-44 md:h-44 lg:w-56 lg:h-56 object-contain z-30 opacity-90"
         style={{ transform: 'rotate(12deg)' }}
       />
 
       {/* Content */}
-      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center">
-        <div className="space-y-8 animate-fade-in">
+      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 md:py-32 text-center">
+        <div className="space-y-6 sm:space-y-8 animate-fade-in">
           {/* Badge */}
-          <div className="inline-flex items-center space-x-2 bg-primary-500/10 border border-primary-500/30 rounded-full px-6 py-2">
+          <div className="inline-flex items-center space-x-2 bg-primary-500/10 border border-primary-500/30 rounded-full px-4 py-2 sm:px-6">
             <span className="w-2 h-2 bg-primary-500 rounded-full animate-pulse" />
-            <span className="text-primary-400 font-semibold text-sm">Live on Base Network</span>
+            <span className="text-primary-400 font-semibold text-xs sm:text-sm">Live on Base Network</span>
           </div>
 
           {/* Main heading */}
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black leading-tight px-2">
             <span className="text-white">Climb the Tree.</span>
             <br />
             <span className="text-gradient">Conquer the Jungle.</span>
           </h1>
 
           {/* Subheading */}
-          <p className="text-xl sm:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed px-4">
             Join the ultimate arcade adventure where skill meets rewards. 
             Dodge obstacles, collect bananas, and compete in tournaments to earn real value.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6">
-            <button className="btn-primary w-full sm:w-auto">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 pt-4 sm:pt-6 px-4">
+            <button className="btn-primary w-full sm:w-auto text-sm sm:text-base">
               <span>Play Now</span>
             </button>
-            <button className="btn-secondary w-full sm:w-auto" onClick={() => document.getElementById('tokenomics')?.scrollIntoView({ behavior: 'smooth' })}>
+            <button className="btn-secondary w-full sm:w-auto text-sm sm:text-base" onClick={() => document.getElementById('tokenomics')?.scrollIntoView({ behavior: 'smooth' })}>
               <span>View Tokenomics</span>
             </button>
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-16 max-w-4xl mx-auto">
-            <div className="stat-item bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm rounded-2xl p-6 border border-primary-500/20">
-              <div className="text-4xl font-bold text-gradient mb-2">100B</div>
-              <div className="text-gray-400 text-sm font-medium">Total Supply</div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6 lg:gap-8 pt-12 sm:pt-16 max-w-4xl mx-auto px-2">
+            <div className="stat-item bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 border border-primary-500/20">
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-gradient mb-1 sm:mb-2">100B</div>
+              <div className="text-gray-400 text-xs sm:text-sm font-medium">Total Supply</div>
             </div>
-            <div className="stat-item bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm rounded-2xl p-6 border border-primary-500/20" style={{ animationDelay: '0.1s' }}>
-              <div className="text-4xl font-bold text-gradient mb-2">50%</div>
-              <div className="text-gray-400 text-sm font-medium">Liquidity Pool</div>
+            <div className="stat-item bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 border border-primary-500/20" style={{ animationDelay: '0.1s' }}>
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-gradient mb-1 sm:mb-2">50%</div>
+              <div className="text-gray-400 text-xs sm:text-sm font-medium">Liquidity Pool</div>
             </div>
-            <div className="stat-item bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm rounded-2xl p-6 border border-primary-500/20" style={{ animationDelay: '0.2s' }}>
-              <div className="text-4xl font-bold text-gradient mb-2">10%</div>
-              <div className="text-gray-400 text-sm font-medium">Player Rewards</div>
+            <div className="stat-item bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 border border-primary-500/20" style={{ animationDelay: '0.2s' }}>
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-gradient mb-1 sm:mb-2">10%</div>
+              <div className="text-gray-400 text-xs sm:text-sm font-medium">Player Rewards</div>
             </div>
-            <div className="stat-item bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm rounded-2xl p-6 border border-primary-500/20" style={{ animationDelay: '0.3s' }}>
-              <div className="text-4xl font-bold text-gradient mb-2">Base</div>
-              <div className="text-gray-400 text-sm font-medium">Network</div>
+            <div className="stat-item bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 border border-primary-500/20" style={{ animationDelay: '0.3s' }}>
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-gradient mb-1 sm:mb-2">Base</div>
+              <div className="text-gray-400 text-xs sm:text-sm font-medium">Network</div>
             </div>
           </div>
         </div>
