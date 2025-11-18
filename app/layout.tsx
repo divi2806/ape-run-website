@@ -5,9 +5,9 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Ape Run | Climb, Compete, Earn',
-  description: 'Join the ultimate jungle adventure. Climb the Base tree, dodge obstacles, collect rewards, and compete in tournaments.',
-  keywords: 'Ape Run, blockchain game, Ticket game, Base network, gaming token, play to earn',
+  title: 'Apex Runner | Climb, Compete, Earn',
+  description: 'Join the ultimate blockchain arcade game on Base. Climb higher, compete harder, and earn $TICKET tokens.',
+  keywords: 'Apex Runner, blockchain game, Ticket game, Base network, gaming token, play to earn',
 }
 
 export default function RootLayout({

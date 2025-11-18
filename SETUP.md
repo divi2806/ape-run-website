@@ -77,9 +77,9 @@ npm run build
 npm start
 ```
 
-## About Ape Run
+## About Apex Runner
 
-Ape Run is a fast-paced arcade game where players climb an endless tree, dodging branches and collecting bananas. Built on Base network with full Web3 integration.
+Apex Runner is a fast-paced arcade game where players climb an endless tree, dodging branches and collecting bananas. Built on Base network with full Web3 integration.
 
 ## Token Details Summary
 
@@ -110,4 +110,4 @@ Ape Run is a fast-paced arcade game where players climb an endless tree, dodging
 - Framer Motion (for animations)
 - Canvas API (for particle effects)
 
-Enjoy your new Ape Run token website!
+Enjoy your new Apex Runner token website!

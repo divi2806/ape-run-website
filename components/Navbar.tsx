@@ -37,7 +37,7 @@ export default function Navbar() {
             <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center text-lg sm:text-xl md:text-2xl font-bold">
               AR
             </div>
-            <span className="text-xl sm:text-2xl font-bold text-gradient">Ape Run</span>
+            <span className="text-xl sm:text-2xl font-bold text-gradient">Apex Runner</span>
           </div>
 
           {/* Desktop Navigation */}

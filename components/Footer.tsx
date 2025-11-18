@@ -18,7 +18,7 @@ export default function Footer() {
               <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center text-xl font-bold">
                 AR
               </div>
-              <span className="text-2xl font-bold text-gradient">Ape Run</span>
+              <span className="text-2xl font-bold text-gradient">Apex Runner</span>
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
               The ultimate arcade game on Base network. Climb, compete, and earn rewards 
@@ -87,7 +87,7 @@ export default function Footer() {
         <div className="pt-8 border-t border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-sm">
-              © {currentYear} Ape Run. All rights reserved.
+              © {currentYear} Apex Runner. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors">

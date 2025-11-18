@@ -1,6 +1,6 @@
-# Ape Run Token Website
+# Apex Runner Token Website
 
-A professional marketing website for the Ape Run token launch, featuring a gamified jungle/ape theme.
+A professional marketing website for the Apex Runner token launch, featuring a gamified jungle/ape theme.
 
 ## Features
 

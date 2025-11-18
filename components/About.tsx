@@ -13,8 +13,8 @@ export default function About() {
       gradient: 'from-purple-400 to-pink-500',
     },
     {
-      title: 'Ticket Integration',
-      description: 'Own exclusive Ape Run Tickets to unlock special tournaments, bonus rewards, and unique in-game abilities.',
+      title: 'Exclusive Tickets',
+      description: 'Own exclusive Apex Runner Tickets to unlock special tournaments, bonus rewards, and unique in-game abilities.',
       gradient: 'from-blue-400 to-cyan-500',
     },
     {
@@ -66,10 +66,10 @@ export default function About() {
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-4 sm:mb-6 px-2">
             <span className="text-white">About </span>
-            <span className="text-gradient">Ape Run</span>
+            <span className="text-gradient">Apex Runner</span>
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed px-4">
-            Ape Run is a skill-based arcade game where players climb an endless tree, 
+            Apex Runner is a skill-based arcade game where players climb an endless tree, 
             dodging branches and collecting bananas. Built on Base network with Web3 integration, 
             it combines classic arcade gameplay with modern blockchain rewards.
           </p>
