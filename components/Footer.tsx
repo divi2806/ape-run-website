@@ -2,8 +2,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   const socialLinks = [
-    { name: 'Twitter', href: '#' },
-    { name: 'Discord', href: '#' },
+    { name: 'Twitter', href: 'https://x.com/tryrecessdotfun' },
     { name: 'Telegram', href: '#' },
     { name: 'GitHub', href: '#' },
   ]
@@ -70,12 +69,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors">
-                  Join Discord
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors">
+                <a href="https://x.com/tryrecessdotfun" className="text-gray-400 hover:text-primary-400 transition-colors">
                   Follow on X
                 </a>
               </li>
