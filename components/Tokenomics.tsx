@@ -198,6 +198,80 @@ export default function Tokenomics() {
           </div>
         </div>
 
+        {/* Token Mechanism - Buyback & Burn */}
+        <div className="mb-12 sm:mb-16 md:mb-20">
+          <h3 className="text-2xl sm:text-3xl font-bold text-center text-white mb-3 sm:mb-4 px-2">Sustainable Token Mechanism</h3>
+          <p className="text-center text-gray-400 mb-8 sm:mb-12 max-w-2xl mx-auto text-sm sm:text-base px-4">
+            Our tokenomics create constant buying pressure and reduce supply, building long-term value for holders
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+            {/* 30% Treasury */}
+            <div className="card-hover bg-gradient-to-br from-blue-900/40 to-blue-800/20 backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-7 md:p-8 border border-blue-500/30 relative overflow-hidden group">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-cyan-500 opacity-0 group-hover:opacity-10 transition-opacity duration-300" />
+              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl bg-gradient-to-br from-blue-400 to-cyan-500 mb-4 sm:mb-6 flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300 relative z-10">
+                <svg className="w-7 h-7 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg>
+              </div>
+              <div className="text-4xl sm:text-5xl font-black text-gradient mb-3 sm:mb-4 relative z-10">30%</div>
+              <h4 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3 relative z-10">To Treasury</h4>
+              <p className="text-gray-300 text-sm sm:text-base leading-relaxed relative z-10">
+                Every in-game purchase allocates 30% to the DAO treasury, funding development, marketing, and community initiatives.
+              </p>
+            </div>
+
+            {/* 70% Burned */}
+            <div className="card-hover bg-gradient-to-br from-orange-900/40 to-red-800/20 backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-7 md:p-8 border border-orange-500/30 relative overflow-hidden group">
+              <div className="absolute inset-0 bg-gradient-to-br from-orange-500 to-red-500 opacity-0 group-hover:opacity-10 transition-opacity duration-300" />
+              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl bg-gradient-to-br from-orange-400 to-red-500 mb-4 sm:mb-6 flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300 relative z-10">
+                <svg className="w-7 h-7 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
+                </svg>
+              </div>
+              <div className="text-4xl sm:text-5xl font-black text-gradient mb-3 sm:mb-4 relative z-10">70%</div>
+              <h4 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3 relative z-10">Permanently Burned</h4>
+              <p className="text-gray-300 text-sm sm:text-base leading-relaxed relative z-10">
+                The remaining 70% of every in-game purchase is permanently removed from circulation, continuously reducing supply.
+              </p>
+            </div>
+
+            {/* Regular Buybacks */}
+            <div className="card-hover bg-gradient-to-br from-green-900/40 to-emerald-800/20 backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-7 md:p-8 border border-green-500/30 relative overflow-hidden group">
+              <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-emerald-500 opacity-0 group-hover:opacity-10 transition-opacity duration-300" />
+              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl bg-gradient-to-br from-green-400 to-emerald-500 mb-4 sm:mb-6 flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300 relative z-10">
+                <svg className="w-7 h-7 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                </svg>
+              </div>
+              <div className="text-3xl sm:text-4xl font-black text-gradient mb-3 sm:mb-4 relative z-10">Regular</div>
+              <h4 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3 relative z-10">Buyback Program</h4>
+              <p className="text-gray-300 text-sm sm:text-base leading-relaxed relative z-10">
+                Strategic buybacks are executed regularly using treasury funds, creating consistent buying pressure and price support.
+              </p>
+            </div>
+          </div>
+
+          {/* Trust mechanism explanation */}
+          <div className="mt-8 sm:mt-10 md:mt-12 bg-gradient-to-br from-primary-500/10 to-primary-600/5 backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-primary-500/20">
+            <div className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center flex-shrink-0 shadow-lg">
+                <svg className="w-6 h-6 sm:w-7 sm:h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <div className="flex-1">
+                <h4 className="text-lg sm:text-xl font-bold text-white mb-2">Built for Long-Term Trust</h4>
+                <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
+                  This deflationary mechanism ensures that every transaction benefits holders. With 70% burned and 30% fueling ecosystem growth, 
+                  combined with regular buybacks, we create a sustainable economic model that rewards long-term believers and builds community trust through transparency and proven tokenomics.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Token Utilities */}
         <div>
           <h3 className="text-2xl sm:text-3xl font-bold text-center text-white mb-3 sm:mb-4 px-2">Token Utilities</h3>
