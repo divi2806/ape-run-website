@@ -60,9 +60,14 @@ export default function Navbar() {
             >
               Tokenomics
             </button>
-            <button className="btn-primary px-6 py-2.5 text-sm">
+            <a 
+              href="https://farcaster.xyz/miniapps/lD8uzclJ4Cii/apex-runner"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary px-6 py-2.5 text-sm"
+            >
               <span>Launch App</span>
-            </button>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -111,9 +116,14 @@ export default function Navbar() {
             >
               Tokenomics
             </button>
-            <button className="btn-primary w-full">
+            <a 
+              href="https://farcaster.xyz/miniapps/lD8uzclJ4Cii/apex-runner"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary w-full"
+            >
               <span>Launch App</span>
-            </button>
+            </a>
           </div>
         </div>
       )}

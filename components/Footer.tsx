@@ -64,7 +64,7 @@ export default function Footer() {
             <h4 className="text-white font-bold mb-4">Community</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors">
+                <a href="https://farcaster.xyz/miniapps/lD8uzclJ4Cii/apex-runner" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary-400 transition-colors">
                   Play Now
                 </a>
               </li>

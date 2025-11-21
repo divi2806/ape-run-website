@@ -129,9 +129,14 @@ export default function Hero() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 pt-4 sm:pt-6 px-4">
-            <button className="btn-primary w-full sm:w-auto text-sm sm:text-base">
+            <a 
+              href="https://farcaster.xyz/miniapps/lD8uzclJ4Cii/apex-runner"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary w-full sm:w-auto text-sm sm:text-base"
+            >
               <span>Play Now</span>
-            </button>
+            </a>
             <button className="btn-secondary w-full sm:w-auto text-sm sm:text-base" onClick={() => document.getElementById('tokenomics')?.scrollIntoView({ behavior: 'smooth' })}>
               <span>View Tokenomics</span>
             </button>

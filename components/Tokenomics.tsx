@@ -321,7 +321,7 @@ export default function Tokenomics() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a 
-                href="https://farcaster.xyz/miniapps/lD8uzclJ4Cii/ape-run" 
+                href="https://farcaster.xyz/miniapps/lD8uzclJ4Cii/apex-runner" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="btn-primary w-full sm:w-auto"
